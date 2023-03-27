@@ -25,21 +25,25 @@
                     <button>RU</button>
                     <button>ENG</button>
                 </div>
-                
             </div>
-            <img src="img/Denis.png" alt="photo">
+            <picture>
+                <source srcset="./img/Denis-portrait.png" media="(max-width: 600px)">
+                <img src="./img/Denis.png" alt="photo">
+            </picture>
         </header>
 
         <main>
             <section class="about-me">
                 <h2 id="about">About Me</h2>
-                <p>Hi, I'm Denis – UX/UI designer from Minsk.<br> I'm interested in design and everything connected with it. </p>
-                <p>I'm studying at courses "Web and mobile design<br> interfaces" in IT-Academy.</p>
-                <p>Ready to implement excellent projects<br> with wonderful people.</p>
+                <div>
+                    <p>Hi, I'm Denis – UX/UI designer from Minsk.<br> I'm interested in design and everything connected with it. </p>
+                    <p>I'm studying at courses "Web and mobile design<br> interfaces" in IT-Academy.</p>
+                    <p>Ready to implement excellent projects<br> with wonderful people.</p>
+                </div>
             </section>
             <section class="skills">
                 <h2 id="skills">Skills</h2>
-                <p>I work in such programs as</p>
+                <p class="skills-description">I work in such programs as</p>
                 <div class="skills-container">
                     <div class="skills-container__item">
                         <img src="img/Photoshop.png" alt="photoshop">
@@ -89,19 +93,19 @@
             </section>
             <section class="portfolio">
                 <h2 id="portfolio">Portfolio</h2>
-                <img src="img/fashion.png" alt="site">
-                <a href="#">Online fashion store - Homepage</a>
-                <img src="img/reebok.png" alt="site">
-                <a href="#">Reebok Store - Concept</a>
-                <img src="img/braun.png" alt="site">
-                <a href="#">Braun Landing Page - Concept</a>
+                <img src="img/fashion.png" alt="site" class="fashion">
+                <p><a href="#">Online fashion store - Homepage</a></p>
+                <img src="img/reebok.png" alt="site" class="reebok">
+                <p><a href="#">Reebok Store - Concept</a></p>
+                <img src="img/braun.png" alt="site" class="braun">
+                <p><a href="#">Braun Landing Page - Concept</a></p>
             </section>
         </main>
 
         <footer>
             <div class="footer-container">
                 <h2 id="contacts">Contacts</h2>
-                <p>Want to know more or just chat?<br> You are welcome!</p>
+                <p class="footer-description">Want to know more or just chat?<br> You are welcome!</p>
                 <button class="send-message">Send message</button>
                 <div class="footer__icon-container">
                     <a href="#"><img src="img/linked_in.svg" alt="linked in"></a>
@@ -109,7 +113,7 @@
                     <a href="#"><img src="img/Be.svg" alt="Behance"></a>
                     <a href="#"><img src="img/dribble.svg" alt="dribble"></a>
                 </div>
-                <p>Like me on<br> LinkedIn, Instagram, Behance, Dribble</p>
+                <p class="footer-description-end">Like me on<br> LinkedIn, Instagram, Behance, Dribble</p>
             </div>
         </footer>
     </div>

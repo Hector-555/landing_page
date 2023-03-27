@@ -1,3 +1,15 @@
+@font-face {
+    font-family: "Gilroy-Medium";
+    src: url("./fonts/gilroy-medium.eot"); /* IE 9 Compatibility Mode */
+    src: url("./fonts/gilroy-medium.eot?#iefix") format("embedded-opentype"),
+    /* IE < 9 */ url("./fonts/gilroy-medium.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("./fonts/gilroy-medium.woff") format("woff"),
+    /* Firefox >= 3.6, any other modern browser */
+      url("./fonts/gilroy-medium.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("./fonts/gilroy-medium.svg#gilroy-medium")
+      format("svg"); /* Chrome < 4, Legacy iOS */
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -5,9 +17,11 @@
 }
 
 body {
-  font-size: 18px;
-  color: #070707;
-  background-color: #fff;
+    font-size: 18px;
+    line-height: 21px;
+    color: #070707;
+    background-color: #fff;
+    font-family: "Gilroy-Medium";
 }
 
 .main-container {
@@ -20,15 +34,15 @@ header {
 }
 
 nav {
-  display: flex;
-  justify-content: space-between;
-  min-height: 88px;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    min-height: 88px;
+    align-items: center;
 }
 
 nav a {
-  text-decoration: none;
-  color: #828282;
+    text-decoration: none;
+    color: #828282;
 }
 
 nav a:hover {
@@ -36,7 +50,7 @@ nav a:hover {
 }
 
 .active {
-  color: #070707;
+    color: #070707;
 }
 
 .header-content {
@@ -48,36 +62,52 @@ nav a:hover {
 
 h1 {
     font-size: 47px;
+    line-height: 59px;
 }
 
 h2 {
     font-size: 34px;
+    line-height: 42px;
 }
 
 .about-me {
-    min-height: 500px;
+    min-height: 506px;
+    text-align: center;
+    background-color: #f6f6f6;
+}
+
+.about-me h2 {
+    padding-top: 120px;
+    margin-bottom: 18px;
+}
+
+.about-me div {
+    min-height: 218px;
+    margin-bottom: 107px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background-color: #f6f6f6;
-    justify-content: space-evenly;
-    text-align: center;
+    justify-content: space-between;
 }
 
 .skills {
-    min-height: 600px;
+    min-height: 610px;
     text-align: center;
 }
 
 .skills h2 {
-    margin: 91px auto 69px;
+    padding-top: 91px;
+    margin-bottom: 69px;
+}
+
+.skills-description {
+    margin-bottom: 83px;
 }
 
 .skills-container {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin: 83px auto 110px;
+    margin-bottom: 110px;
 }
 
 .skills-container__item {
@@ -103,11 +133,11 @@ h2 {
     background-color: #f6f6f6;
     align-items: center;
     text-align: center;
-    padding-top: 113px;
-    padding-bottom: 99px;
+    padding-bottom: 96px;
 }
 
 .portfolio h2 {
+    padding-top: 113px;
     margin-bottom: 47px;
 }
 
@@ -115,16 +145,30 @@ h2 {
     color: #070707;
 }
 
+.portfolio a:hover {
+    color: red;
+}
+
+.portfolio p::not-last-child {
+    margin-bottom: 99px;
+}
+
 .portfolio img {
+    margin-bottom: 45px;
+}
+
+.fashion {
+    width: 936px;
+    height: 510px;
+}
+
+.reebok, .braun {
     width: 936px;
     height: 522px;
-    margin-bottom: 45px;
-    margin-top: 99px;
 }
 
 footer {
-    min-height: 620px;
-    padding-top: 114px;
+    min-height: 622px;
 }
 
 .footer-container {
@@ -136,13 +180,24 @@ footer {
     justify-content: space-between;
 }
 
+.footer-container h2 {
+    padding-top: 114px;
+    margin-bottom: 20px;
+}
+
+.footer-description {
+    margin-bottom: 30px;
+}
+
 .footer__icon-container {
+    margin-bottom: 45px;
     width: 342px;
     display: flex;
     justify-content: space-between;
 }
 
 .send-message {
+    margin-bottom: 86px;
     color: #fff;
     background-color: #000;
     height: 42px;
@@ -154,4 +209,10 @@ footer {
 
 .send-message:hover {
     background-color: #626262;
+}
+
+.footer-description-end {
+    margin-bottom: 123px;
+    font-size: 14px;
+    line-height: 17px;
 }
