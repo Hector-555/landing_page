@@ -18,7 +18,7 @@
 
 body {
     font-size: 18px;
-    line-height: 21px;
+    line-height: 22px;
     color: #070707;
     background-color: #fff;
     font-family: "Gilroy-Medium";
@@ -38,6 +38,7 @@ nav {
     justify-content: space-between;
     min-height: 88px;
     align-items: center;
+    border-bottom: 1px solid #000;
 }
 
 nav a {
@@ -58,6 +59,26 @@ nav a:hover {
     justify-content: space-between;
     align-items: center;
     margin: 30px auto;
+}
+
+.trigger-btn__wrapper {
+    rotate: 270deg;
+}
+
+.trigger-btn {
+    cursor: pointer;
+    border: none;
+    background-color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.trigger-btn:hover {
+    color: red;
+}
+
+.choosed {
+    font-weight: 700;
 }
 
 h1 {
@@ -133,7 +154,6 @@ h2 {
     background-color: #f6f6f6;
     align-items: center;
     text-align: center;
-    padding-bottom: 96px;
 }
 
 .portfolio h2 {
@@ -149,8 +169,8 @@ h2 {
     color: red;
 }
 
-.portfolio p::not-last-child {
-    margin-bottom: 99px;
+.portfolio p {
+    padding-bottom: 99px;
 }
 
 .portfolio img {

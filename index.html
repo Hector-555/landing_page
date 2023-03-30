@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Denis Novik resume">
     <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="img/favicon.jpg" type="image/x-icon">
     <title>Denis Novik</title>
 </head>
 <body>
@@ -17,13 +19,12 @@
                 <a href="#portfolio">Portfolio</a>
                 <a href="#contacts">Contacts</a>
             </nav>
-            <hr>
             <div class="header-content">
                 <h1>Denis<br> Novak</h1>
                 <p>UX | UI designer<br> 24 years old, Minsk</p>
-                <div>
-                    <button>RU</button>
-                    <button>ENG</button>
+                <div class="trigger-btn__wrapper">
+                    <button class="trigger-btn">RU</button>
+                    <button class="trigger-btn choosed">ENG</button>
                 </div>
             </div>
             <picture>
@@ -93,11 +94,20 @@
             </section>
             <section class="portfolio">
                 <h2 id="portfolio">Portfolio</h2>
-                <img src="img/fashion.png" alt="site" class="fashion">
+                <picture>
+                    <source srcset="img/fashion-small.png" media="(max-width: 600px)">
+                    <img src="img/fashion.png" alt="site">
+                </picture>
                 <p><a href="#">Online fashion store - Homepage</a></p>
-                <img src="img/reebok.png" alt="site" class="reebok">
+                <picture>
+                    <source srcset="img/reebok-small.png" media="(max-width: 600px)">
+                    <img src="img/reebok.png" alt="site">
+                </picture>
                 <p><a href="#">Reebok Store - Concept</a></p>
-                <img src="img/braun.png" alt="site" class="braun">
+                <picture>
+                    <source srcset="img/braun-small.png" media="(max-width: 600px)">
+                    <img src="img/braun.png" alt="site">
+                </picture>
                 <p><a href="#">Braun Landing Page - Concept</a></p>
             </section>
         </main>
