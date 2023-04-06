@@ -1,14 +1,14 @@
 @font-face {
     font-family: gilroy-bold;
-    src: url("../fonts/Gilroy-Bold.ttf");
+    src: url("fonts/Gilroy-Bold.ttf");
 }
 @font-face {
     font-family: gilroy-regular;
-    src: url("../fonts/Gilroy-Regular.ttf");
+    src: url("fonts/Gilroy-Regular.ttf");
 }
 @font-face {
     font-family: gilroy-medium;
-    src: url("../fonts/Gilroy-Medium.ttf");
+    src: url("fonts/Gilroy-Medium.ttf");
 }
 
 
@@ -277,6 +277,8 @@ footer {
     border-radius: 20px;
     font-family: gilroy-medium;
     font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
 }
 
 .send-message:hover {
