@@ -262,6 +262,10 @@ footer {
     justify-content: space-between;
 }
 
+.footer__icon-container a:hover {
+    transform: scale(1.1);
+}
+
 .send-message {
     margin-bottom: 86px;
     color: #fff;
