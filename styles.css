@@ -1,14 +1,16 @@
 @font-face {
-    font-family: "Gilroy-Medium";
-    src: url("./fonts/gilroy-medium.eot"); /* IE 9 Compatibility Mode */
-    src: url("./fonts/gilroy-medium.eot?#iefix") format("embedded-opentype"),
-    /* IE < 9 */ url("./fonts/gilroy-medium.woff2") format("woff2"),
-    /* Super Modern Browsers */ url("./fonts/gilroy-medium.woff") format("woff"),
-    /* Firefox >= 3.6, any other modern browser */
-      url("./fonts/gilroy-medium.ttf") format("truetype"),
-    /* Safari, Android, iOS */ url("./fonts/gilroy-medium.svg#gilroy-medium")
-      format("svg"); /* Chrome < 4, Legacy iOS */
+    font-family: gilroy-bold;
+    src: url("../fonts/Gilroy-Bold.ttf");
 }
+@font-face {
+    font-family: gilroy-regular;
+    src: url("../fonts/Gilroy-Regular.ttf");
+}
+@font-face {
+    font-family: gilroy-medium;
+    src: url("../fonts/Gilroy-Medium.ttf");
+}
+
 
 * {
     padding: 0;
@@ -16,26 +18,37 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-size: 18px;
     line-height: 22px;
     color: #070707;
     background-color: #fff;
-    font-family: "Gilroy-Medium";
+    font-family: gilroy-medium;
 }
 
 .main-container {
-    width: 940px;
+    max-width: 1445px;
     margin: 0 auto;
 }
 
 header {
+    max-width: 940px;
+    margin: 0 auto;
     margin-bottom: 104px;
+}
+
+header img {
+    width: 100%;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
+    width: 100%;
     min-height: 88px;
     align-items: center;
     border-bottom: 1px solid #000;
@@ -44,6 +57,8 @@ nav {
 nav a {
     text-decoration: none;
     color: #828282;
+    font-family: gilroy-medium;
+    font-weight: 700;
 }
 
 nav a:hover {
@@ -61,16 +76,23 @@ nav a:hover {
     margin: 30px auto;
 }
 
+.header-content p {
+    padding-top: 55px;
+}
+
 .trigger-btn__wrapper {
     rotate: 270deg;
 }
 
 .trigger-btn {
+    font-family: gilroy-medium;
+    font-weight: 700;
     cursor: pointer;
     border: none;
     background-color: #fff;
     font-size: 16px;
     line-height: 20px;
+    color: #828282;
 }
 
 .trigger-btn:hover {
@@ -78,17 +100,24 @@ nav a:hover {
 }
 
 .choosed {
-    font-weight: 700;
+    color:#000;
 }
 
 h1 {
     font-size: 47px;
     line-height: 59px;
+    font-weight: 700;
 }
 
 h2 {
     font-size: 34px;
     line-height: 42px;
+    font-weight: 700;
+}
+
+.main-content {
+    width: 100%;
+    margin: 0 auto;
 }
 
 .about-me {
@@ -113,6 +142,8 @@ h2 {
 .skills {
     min-height: 610px;
     text-align: center;
+    max-width: 940px;
+    margin: 0 auto;
 }
 
 .skills h2 {
@@ -128,6 +159,8 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 30px;
     margin-bottom: 110px;
 }
 
@@ -150,10 +183,22 @@ h2 {
     width: 58px;
 }
 
+.stars-container {
+    display: flex;
+    gap: 9px;
+}
+
+.portfolio-container {
+    width: 100%;
+    background-color: #f6f6f6;
+}
+
 .portfolio {
     background-color: #f6f6f6;
     align-items: center;
     text-align: center;
+    max-width: 940px;
+    margin: 0 auto;
 }
 
 .portfolio h2 {
@@ -175,6 +220,7 @@ h2 {
 
 .portfolio img {
     margin-bottom: 45px;
+    width: 100%;
 }
 
 .fashion {
@@ -225,6 +271,8 @@ footer {
     cursor: pointer;
     border: none;
     border-radius: 20px;
+    font-family: gilroy-medium;
+    font-weight: 700;
 }
 
 .send-message:hover {

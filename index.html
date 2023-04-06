@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Denis Novik resume">
+    <meta name="description" content="denis novik resume">
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="img/favicon.jpg" type="image/x-icon">
     <title>Denis Novik</title>
@@ -13,14 +13,14 @@
     <div class="main-container">
         <header>
             <nav>
-                <a href="#" class="active">Home</a>
+                <a href="#home" class="active">Home</a>
                 <a href="#about">About Me</a>
                 <a href="#skills">Skills</a>
                 <a href="#portfolio">Portfolio</a>
                 <a href="#contacts">Contacts</a>
             </nav>
-            <div class="header-content">
-                <h1>Denis<br> Novak</h1>
+            <div class="header-content" id="home">
+                <h1>Denis<br> Novik</h1>
                 <p>UX | UI designer<br> 24 years old, Minsk</p>
                 <div class="trigger-btn__wrapper">
                     <button class="trigger-btn">RU</button>
@@ -28,12 +28,12 @@
                 </div>
             </div>
             <picture>
-                <source srcset="./img/Denis-portrait.png" media="(max-width: 600px)">
-                <img src="./img/Denis.png" alt="photo">
+                <source srcset="./img/Denis-portrait.png" media="(max-width: 400px)">
+                <img src="./img/Denis.png" alt="photo" title="Denis Novik">
             </picture>
         </header>
 
-        <main>
+        <main class="main-content">
             <section class="about-me">
                 <h2 id="about">About Me</h2>
                 <div>
@@ -47,9 +47,9 @@
                 <p class="skills-description">I work in such programs as</p>
                 <div class="skills-container">
                     <div class="skills-container__item">
-                        <img src="img/Photoshop.png" alt="photoshop">
+                        <img src="img/Photoshop.png" alt="photoshop" title="Photoshop">
                         <p>Adobe<br> Photoshop</p>
-                        <div>
+                        <div class="stars-container">
                             <img src="img/star_black.svg" alt="*">
                             <img src="img/star_black.svg" alt="*">
                             <img src="img/star_black.svg" alt="*">
@@ -58,9 +58,9 @@
                         </div>
                     </div>
                     <div class="skills-container__item">
-                        <img src="img/illustrator.png" alt="illustrator">
+                        <img src="img/illustrator.png" alt="illustrator" title="Illustrator">
                         <p>Adobe<br> Illustrator</p>
-                        <div>
+                        <div class="stars-container">
                             <img src="img/star_black.svg" alt="*">
                             <img src="img/star_black.svg" alt="*">
                             <img src="img/star_black.svg" alt="*">
@@ -69,9 +69,9 @@
                         </div>
                     </div>
                     <div class="skills-container__item">
-                        <img src="img/after_effects.png" alt="AAE">
+                        <img src="img/after_effects.png" alt="AAE" title="After effects">
                         <p>Adobe<br> After Effects</p>
-                        <div>
+                        <div class="stars-container">
                             <img src="img/star_black.svg" alt="*">
                             <img src="img/star_black.svg" alt="*">
                             <img src="img/star_black.svg" alt="*">
@@ -80,9 +80,9 @@
                         </div>
                     </div>
                     <div class="skills-container__item">
-                        <img src="img/figma.png" alt="figma" class="figma-img">
+                        <img src="img/figma.png" alt="figma" class="figma-img" title="figma">
                         <p>Figma</p>
-                        <div>
+                        <div class="stars-container">
                             <img src="img/star_black.svg" alt="*">
                             <img src="img/star_black.svg" alt="*">
                             <img src="img/star_black.svg" alt="*">
@@ -92,36 +92,38 @@
                     </div>
                 </div>
             </section>
-            <section class="portfolio">
-                <h2 id="portfolio">Portfolio</h2>
-                <picture>
-                    <source srcset="img/fashion-small.png" media="(max-width: 600px)">
-                    <img src="img/fashion.png" alt="site">
-                </picture>
-                <p><a href="#">Online fashion store - Homepage</a></p>
-                <picture>
-                    <source srcset="img/reebok-small.png" media="(max-width: 600px)">
-                    <img src="img/reebok.png" alt="site">
-                </picture>
-                <p><a href="#">Reebok Store - Concept</a></p>
-                <picture>
-                    <source srcset="img/braun-small.png" media="(max-width: 600px)">
-                    <img src="img/braun.png" alt="site">
-                </picture>
-                <p><a href="#">Braun Landing Page - Concept</a></p>
-            </section>
+            <div class="portfolio-container">
+                <section class="portfolio">
+                    <h2 id="portfolio">Portfolio</h2>
+                    <picture>
+                        <source srcset="img/fashion-small.png" media="(max-width: 400px)">
+                        <img src="img/fashion.png" alt="site" title="Online fashion store">
+                    </picture>
+                    <p><a href="#" target="_blank">Online fashion store - Homepage</a></p>
+                    <picture>
+                        <source srcset="img/reebok-small.png" media="(max-width: 400px)">
+                        <img src="img/reebok.png" alt="site" title="Reebok Store">
+                    </picture>
+                    <p><a href="#" target="_blank">Reebok Store - Concept</a></p>
+                    <picture>
+                        <source srcset="img/braun-small.png" media="(max-width: 400px)">
+                        <img src="img/braun.png" alt="site" title="Braun LP">
+                    </picture>
+                    <p><a href="#" target="_blank">Braun Landing Page - Concept</a></p>
+                </section>
+            </div>
         </main>
 
         <footer>
             <div class="footer-container">
                 <h2 id="contacts">Contacts</h2>
                 <p class="footer-description">Want to know more or just chat?<br> You are welcome!</p>
-                <button class="send-message">Send message</button>
+                <a href="https://wa.me/79161234567?text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82!" target="_blank"><button class="send-message">Send message</button></a>
                 <div class="footer__icon-container">
-                    <a href="#"><img src="img/linked_in.svg" alt="linked in"></a>
-                    <a href="#"><img src="img/IG.svg" alt="instagram"></a>
-                    <a href="#"><img src="img/Be.svg" alt="Behance"></a>
-                    <a href="#"><img src="img/dribble.svg" alt="dribble"></a>
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=IN_login" target="_blank"><img src="img/linked_in.svg" alt="linked in" title="linked in"></a>
+                    <a href="https://msng.link/o/?IG_login=ig" target="_blank"><img src="img/IG.svg" alt="instagram" title="instagram"></a>
+                    <a href="https://www.behance.net/loggedout" target="_blank"><img src="img/Be.svg" alt="Behance" title="Behance"></a>
+                    <a href="https://dribbble.com/" target="_blank"><img src="img/dribble.svg" alt="Dribble" title="dribble"></a>
                 </div>
                 <p class="footer-description-end">Like me on<br> LinkedIn, Instagram, Behance, Dribble</p>
             </div>
